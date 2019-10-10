@@ -5,10 +5,17 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i;
+	int n = 0;
+	char c;
 	
-	for (i = 0; i < 10; i++)
-		printf("Hello Suyoung!\n");
+	printf("inpute sentence : ");
+	
+	while ((c = getchar()) != '\n')
+	{
+		if ('0' <= c && c <= '9')
+			n++;
+	}
+	printf("you have %d numbers in this sentence.\n", n);
 	
 	return 0;
 }
