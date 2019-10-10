@@ -5,14 +5,10 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i = 0, m;
+	int i;
 	
-	while(i < 3)
-	{
-		m = i * 1609;
-		printf("%d mile is %d meter\n", i, m);
-		i++;
-	}
+	for (i = 0; i < 10; i++)
+		printf("Hello Suyoung!\n");
 	
 	return 0;
 }
