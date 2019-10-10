@@ -7,13 +7,13 @@ int main(int argc, char *argv[]) {
 	
 	int i;
 	
-	printf("input number:");
+	printf("input integer:");
 	scanf("%d", &i);
 	
-	if (i > 0)
-		printf("%d is positive number.\n", i);
-	else
-		printf("%d is negative number.\n", i);
+	if (i < 0)
+		i = -i;
+	
+	printf("Absolute value is %d", i);
 	
 	return 0;
 }
