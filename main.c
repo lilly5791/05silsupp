@@ -5,17 +5,22 @@
 
 int main(int argc, char *argv[]) {
 	
-	int n = 0;
-	char c;
+	int ans = 50, my, n = 0;
 	
-	printf("inpute sentence : ");
-	
-	while ((c = getchar()) != '\n')
+	do
 	{
-		if ('0' <= c && c <= '9')
-			n++;
-	}
-	printf("you have %d numbers in this sentence.\n", n);
+		printf("inpute your answer! : ");
+		scanf("%d", &my);
+	
+		if(my > ans)
+			printf("Answer is smaller!\n"); 
+		else if(my < ans)
+			printf("Answer is bigger!\n");
+		n++;
+		
+	}while (my != ans);
+	
+	printf("Congratulation! %d is right answer!\n you tried %d times", ans, n);
 	
 	return 0;
 }
